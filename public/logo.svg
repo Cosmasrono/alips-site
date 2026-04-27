@@ -1,0 +1,14 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top Arc of the Eye -->
+  <path d="M30 80C30 80 70 40 100 40C130 40 170 80 170 80" stroke="#00A651" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Bottom Arc of the Eye -->
+  <path d="M50 90C50 90 70 110 100 110C130 110 150 90 150 90" stroke="#00A651" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Leaves / Sprouts -->
+  <path d="M100 100C100 100 90 85 85 75C80 65 85 55 95 60C105 65 100 100 100 100Z" fill="#00A651"/>
+  <path d="M100 100C100 100 110 88 115 80C120 72 115 65 108 68C101 71 100 100 100 100Z" fill="#00A651"/>
+  
+  <!-- Text -->
+  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="black">ALIP SUPPLIERS</text>
+</svg>

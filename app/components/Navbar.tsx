@@ -55,17 +55,7 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-8 flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => scrollToSection("home")}>
-            <div className="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center text-white font-black text-2xl group-hover:rotate-12 transition-transform duration-300">
-              A
-            </div>
-            <div>
-              <span className="text-2xl font-black tracking-tight text-green-900">
-                ALIP
-              </span>
-              <span className="text-2xl font-light tracking-tight ml-1 text-yellow-600">
-                Suppliers
-              </span>
-            </div>
+            <img src="/logo.svg" alt="Alip Suppliers" className="h-16 w-auto group-hover:scale-105 transition-transform duration-300" />
           </div>
 
           {/* Desktop Nav */}

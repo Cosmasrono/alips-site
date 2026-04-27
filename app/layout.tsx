@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ALIPIS Agrovet | Quality Agricultural & Veterinary Supplies",
-  description: "ALIPIS Agrovet provides certified veterinary drugs, farm inputs, animal feeds, and expert agri-services trusted by farmers across the region.",
+  title: "Alip Suppliers | Quality Agricultural & Veterinary Supplies",
+  description: "Alip Suppliers provides certified veterinary drugs, farm inputs, animal feeds, and expert agri-services trusted by farmers across the region.",
 };
 
 export default function RootLayout({

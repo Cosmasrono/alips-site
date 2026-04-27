@@ -11,10 +11,7 @@ export default function Footer() {
           {/* Company Bio */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-8">
-              <div className="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center text-white font-black text-2xl">
-                A
-              </div>
-              <span className="text-2xl font-black tracking-tight">ALIP <span className="text-yellow-500 font-light">Suppliers</span></span>
+              <img src="/logo-white.svg" alt="Alip Suppliers" className="h-16 w-auto" />
             </div>
             <p className="text-white/60 leading-relaxed mb-8 font-medium">
               We are a trusted agrochemical company in Kenya, supplying high-quality crop protection products, specialty fertilizers, and farm solutions that promote sustainable agriculture nationwide.
