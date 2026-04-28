@@ -1,60 +1,168 @@
 "use client";
 
 import Image from "next/image";
-import { productCategories, scrollToSection } from "./constants";
-import { ArrowRight } from "lucide-react";
+import { scrollToSection } from "./constants";
+
+const products = [
+  {
+    name: "Kanon HIGH-P",
+    type: "Foliar Fertilizer",
+    desc: "High-phosphorus formula for strong root development and vigorous early crop establishment.",
+    img: "/products/kanon-high-p.jpg",
+    alt: "Kanon HIGH-P 1L foliar fertilizer bottle",
+    badge: "High Phosphorus",
+    badgeBg: "bg-red-600",
+  },
+  // {
+  //   name: "Kanon HIGH-P",
+  //   type: "Foliar Fertilizer",
+  //   desc: "High-phosphorus formula for strong root development and vigorous early crop establishment.",
+  //   img: "/products/kanon-high-p-b.jpg",
+  //   alt: "Kanon HIGH-P 1L foliar fertilizer bottle alternate view",
+  //   badge: "High Phosphorus",
+  //   badgeBg: "bg-red-600",
+  // },
+  {
+    name: "Kanon HIGH P+K",
+    type: "Foliar Fertilizer",
+    desc: "Phosphorus-potassium blend that drives flowering, fruit set, and bulking for maximum yield quality.",
+    img: "/products/kanon-high-pk.jpg",
+    alt: "Kanon HIGH P+K 1L foliar fertilizer bottle",
+    badge: "Phosphorus + Potassium",
+    badgeBg: "bg-red-700",
+  },
+  {
+    name: "Kanon BIOSTIMULANT",
+    type: "Biostimulant",
+    desc: "Natural biostimulant that boosts crop vigour, improves nutrient uptake, and builds drought resilience.",
+    img: "/products/kanon-biostimulant.jpg",
+    alt: "Kanon Biostimulant 1L bottle",
+    badge: "Biostimulant",
+    badgeBg: "bg-green-700",
+  },
+  {
+    name: "Kanon MAHARAGWE",
+    type: "Foliar Fertilizer",
+    desc: "Specially formulated for bean production — promotes healthy pod fill and reduces flower drop.",
+    img: "/products/kanon-maharagwe.jpg",
+    alt: "Kanon Maharagwe 1L foliar fertilizer bottle",
+    badge: "For Beans",
+    badgeBg: "bg-purple-700",
+  },
+  {
+    name: "Kanon MAHARAGWE",
+    type: "Foliar Fertilizer",
+    desc: "Specially formulated for bean production — promotes healthy pod fill and reduces flower drop.",
+    img: "/products/kanon-maharagwe-b.jpg",
+    alt: "Kanon Maharagwe 1L foliar fertilizer bottle alternate view",
+    badge: "For Beans",
+    badgeBg: "bg-purple-700",
+  },
+  {
+    name: "Kanon N.P.K 24:24:18+TE",
+    type: "Foliar Fertilizer",
+    desc: "Complete balanced NPK with trace elements — suitable for all crops at every growth stage.",
+    img: "/products/kanon-npk.jpg",
+    alt: "Kanon NPK 24:24:18+TE 1L foliar fertilizer bottle",
+    badge: "Complete NPK",
+    badgeBg: "bg-slate-700",
+  },
+  {
+    name: "Kanon N.P.K 24:24:18+TE",
+    type: "Foliar Fertilizer",
+    desc: "Complete balanced NPK with trace elements — suitable for all crops at every growth stage.",
+    img: "/products/kanon-npk-b.jpg",
+    alt: "Kanon NPK 24:24:18+TE 1L foliar fertilizer bottle alternate view",
+    badge: "Complete NPK",
+    badgeBg: "bg-slate-700",
+  },
+];
 
 export default function Products() {
   return (
-    <section id="products" className="py-24 bg-white">
-      <div className="max-w-[1400px] mx-auto px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div className="max-w-2xl">
-            <span className="text-yellow-600 font-bold tracking-widest uppercase text-sm mb-4 block">
-              Our Product Categories
-            </span>
-            <h2 className="text-4xl md:text-5xl font-black text-green-950 mb-6">
-              Leading Agrochemicals & <span className="text-green-700">Crop Solutions</span>
-            </h2>
-            <p className="text-gray-600 text-lg font-medium leading-relaxed">
-              We are dealers in Agrochemicals, Agricultural Disinfectants, Specialty Fertilizers, and Adjuvants, helping farmers achieve maximum yields.
+    <section id="products" className="scroll-mt-20 py-20 md:py-28 bg-white">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8">
+
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-4">
+          <div>
+            <p className="text-green-600 text-xs sm:text-sm font-bold uppercase tracking-widest mb-3">
+              What We Stock
             </p>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 leading-tight">
+              Our Products
+            </h2>
           </div>
-          <button 
-            onClick={() => scrollToSection("contact")}
-            className="flex items-center gap-2 text-green-700 font-bold hover:text-green-800 transition-colors group"
-          >
-            View All Products
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          <p className="text-gray-500 max-w-xs md:text-right leading-relaxed text-sm">
+            Kanon — certified fertigation &amp; foliar fertilizers trusted by
+            farmers across East Africa.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productCategories.map((cat, i) => (
-            <div 
-              key={i} 
-              className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500"
+        {/* Product grid — 2 cols on mobile, 3 on lg */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {products.map((product) => (
+            <div
+              key={product.img}
+              className="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col border border-gray-100"
             >
-              <Image
-                src={cat.image}
-                alt={cat.name}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-green-950/90 via-green-900/20 to-transparent" />
-              
-              <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-2xl font-black text-white mb-4 transition-transform duration-500 group-hover:-translate-y-2">
-                  {cat.name}
+              {/* Bottle image */}
+              <div className="relative h-48 sm:h-60 md:h-72 bg-white flex items-center justify-center overflow-hidden">
+                <Image
+                  src={product.img}
+                  alt={product.alt}
+                  fill
+                  className="object-contain p-3 sm:p-5 group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  onError={(e) => {
+                    const t = e.currentTarget as HTMLImageElement;
+                    t.style.display = "none";
+                    const parent = t.parentElement;
+                    if (parent && !parent.querySelector(".placeholder-bottle")) {
+                      const ph = document.createElement("div");
+                      ph.className = "placeholder-bottle flex flex-col items-center justify-center gap-2 text-gray-300";
+                      ph.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 sm:w-20 sm:h-20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3h6l1 3v1a5 5 0 010 10v1l-1 3H9l-1-3v-1a5 5 0 010-10V6L9 3z"/></svg><span class="text-xs font-semibold">Image coming soon</span>`;
+                      parent.appendChild(ph);
+                    }
+                  }}
+                />
+                <span className={`absolute top-2 left-2 sm:top-3 sm:left-3 ${product.badgeBg} text-white text-[9px] sm:text-xs font-bold px-2 py-0.5 sm:px-3 sm:py-1 rounded-full shadow`}>
+                  {product.badge}
+                </span>
+              </div>
+
+              {/* Info */}
+              <div className="p-3 sm:p-5 flex flex-col flex-1">
+                <p className="text-[9px] sm:text-xs font-bold text-green-600 uppercase tracking-widest mb-1">
+                  {product.type}
+                </p>
+                <h3 className="text-sm sm:text-base md:text-lg font-black text-gray-900 group-hover:text-green-700 transition-colors leading-snug">
+                  {product.name}
                 </h3>
-                <div className="flex items-center gap-3 text-yellow-400 font-bold text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                  <span>DISCOVER MORE</span>
-                  <div className="w-8 h-px bg-yellow-400" />
-                </div>
+                <p className="mt-1.5 sm:mt-2 text-gray-500 text-[11px] sm:text-sm leading-relaxed flex-1 hidden sm:block">
+                  {product.desc}
+                </p>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="mt-3 sm:mt-4 text-left flex items-center gap-1 text-green-700 text-xs sm:text-sm font-bold group-hover:gap-2 transition-all duration-300"
+                >
+                  Enquire <span>&rarr;</span>
+                </button>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Bottom note */}
+        <p className="mt-10 text-center text-gray-400 text-xs sm:text-sm">
+          All products available in 1L — bulk orders welcome.{" "}
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="text-green-600 font-semibold hover:underline"
+          >
+            Contact us for wholesale pricing.
+          </button>
+        </p>
       </div>
     </section>
   );

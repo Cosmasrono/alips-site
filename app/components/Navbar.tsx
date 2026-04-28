@@ -55,7 +55,7 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-8 flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => scrollToSection("home")}>
-            <img src="/logo.svg" alt="Alip Suppliers" className="h-16 w-auto group-hover:scale-105 transition-transform duration-300" />
+            <img src="/logo.svg" alt="Alip Suppliers" className="h-24 w-auto group-hover:scale-105 transition-transform duration-300" />
           </div>
 
           {/* Desktop Nav */}
