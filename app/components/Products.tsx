@@ -13,15 +13,7 @@ const products = [
     badge: "High Phosphorus",
     badgeBg: "bg-red-600",
   },
-  // {
-  //   name: "Kanon HIGH-P",
-  //   type: "Foliar Fertilizer",
-  //   desc: "High-phosphorus formula for strong root development and vigorous early crop establishment.",
-  //   img: "/products/kanon-high-p-b.jpg",
-  //   alt: "Kanon HIGH-P 1L foliar fertilizer bottle alternate view",
-  //   badge: "High Phosphorus",
-  //   badgeBg: "bg-red-600",
-  // },
+ 
   {
     name: "Kanon HIGH P+K",
     type: "Foliar Fertilizer",
@@ -40,15 +32,15 @@ const products = [
     badge: "Biostimulant",
     badgeBg: "bg-green-700",
   },
-  {
-    name: "Kanon MAHARAGWE",
-    type: "Foliar Fertilizer",
-    desc: "Specially formulated for bean production — promotes healthy pod fill and reduces flower drop.",
-    img: "/products/kanon-maharagwe.jpg",
-    alt: "Kanon Maharagwe 1L foliar fertilizer bottle",
-    badge: "For Beans",
-    badgeBg: "bg-purple-700",
-  },
+  // {
+  //   name: "Kanon MAHARAGWE",
+  //   type: "Foliar Fertilizer",
+  //   desc: "Specially formulated for bean production — promotes healthy pod fill and reduces flower drop.",
+  //   img: "/products/kanon-maharagwe.jpg",
+  //   alt: "Kanon Maharagwe 1L foliar fertilizer bottle",
+  //   badge: "For Beans",
+  //   badgeBg: "bg-purple-700",
+  // },
   {
     name: "Kanon MAHARAGWE",
     type: "Foliar Fertilizer",
