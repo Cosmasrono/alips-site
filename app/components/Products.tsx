@@ -32,15 +32,7 @@ const products = [
     badge: "Biostimulant",
     badgeBg: "bg-green-700",
   },
-  // {
-  //   name: "Kanon MAHARAGWE",
-  //   type: "Foliar Fertilizer",
-  //   desc: "Specially formulated for bean production — promotes healthy pod fill and reduces flower drop.",
-  //   img: "/products/kanon-maharagwe.jpg",
-  //   alt: "Kanon Maharagwe 1L foliar fertilizer bottle",
-  //   badge: "For Beans",
-  //   badgeBg: "bg-purple-700",
-  // },
+   
   {
     name: "Kanon MAHARAGWE",
     type: "Foliar Fertilizer",
@@ -50,15 +42,7 @@ const products = [
     badge: "For Beans",
     badgeBg: "bg-purple-700",
   },
-  {
-    name: "Kanon N.P.K 24:24:18+TE",
-    type: "Foliar Fertilizer",
-    desc: "Complete balanced NPK with trace elements — suitable for all crops at every growth stage.",
-    img: "/products/kanon-npk.jpg",
-    alt: "Kanon NPK 24:24:18+TE 1L foliar fertilizer bottle",
-    badge: "Complete NPK",
-    badgeBg: "bg-slate-700",
-  },
+ 
   {
     name: "Kanon N.P.K 24:24:18+TE",
     type: "Foliar Fertilizer",
