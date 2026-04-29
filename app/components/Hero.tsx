@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1800&q=90",
-    title: "Partnering With Farmers",
+    title: "Your Shield in the Field",
     subtitle: "High Quality Pet And Animal Health Products.",
     badge: "Trusted Agriculture Solutions"
   },
