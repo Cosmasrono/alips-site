@@ -97,12 +97,12 @@ export default function Navbar() {
               </div>
             ))}
             
-            <button
+            {/* <button
               onClick={() => scrollToSection("contact")}
               className="ml-4 px-8 py-3 bg-green-700 hover:bg-green-800 text-white rounded-full text-sm font-bold shadow-lg shadow-green-700/20 transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
             >
               Get a Quote
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile Toggle */}
