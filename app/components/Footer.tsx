@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.id}>
-                  <button 
+                  <button
                     onClick={() => scrollToSection(link.id)}
                     className="text-white/60 hover:text-yellow-500 font-bold text-sm transition-colors flex items-center gap-2 group"
                   >
@@ -72,7 +72,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-xs text-white/40 uppercase font-black tracking-widest mb-1">Our Location</p>
-                  <p className="font-bold">Nairobi, Kenya</p>
+                  <p className="font-bold text-sm leading-relaxed">Njoro, Nakuru County, Kenya</p>
                 </div>
               </li>
             </ul>
@@ -86,9 +86,9 @@ export default function Footer() {
             </h4>
             <p className="text-white/60 mb-6 font-medium">Subscribe to get the latest agronomic news and product updates.</p>
             <div className="flex flex-col gap-3">
-              <input 
-                type="email" 
-                placeholder="Your Email Address" 
+              <input
+                type="email"
+                placeholder="Your Email Address"
                 className="bg-white/5 border border-white/10 rounded-full px-6 py-3 text-sm focus:outline-hidden focus:border-yellow-500 transition-colors"
               />
               <button className="bg-yellow-500 hover:bg-yellow-600 text-green-950 font-black py-3 rounded-full transition-all shadow-xl">

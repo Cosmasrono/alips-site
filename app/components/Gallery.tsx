@@ -6,32 +6,27 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 
 const news = [
   {
-    title: "Balanced Potato Nutrition: Essential Ratios for Maximum Yield Quality",
+    title: "Voda NP: Supporting Strong Canopy Development and Photosynthesis",
     date: "April 30, 2026",
-    author: "Karanja Irungu-Molo",
+    author: "Vicky Jeruto",
     category: "Crop Nutrition",
-    image: "/products/WhatsApp Image 2026-04-30 at 5.46.56 AM6.jpeg"
-  },
-  {
-    title: "Effective Weed Control In Maize: The Best Selective Herbicide",
-    date: "March 2, 2026",
-    author: "Mildred Kiura",
-    category: "Recent News",
     image: "/products/WhatsApp Image 2026-04-30 at 5.46.56 AM.jpeg"
+    // C:\inetpub\wwwroot\victoria\vet\agrovet\public\products\WhatsApp Image 2026-04-30 at 5.46.56 AM.jpeg
   },
   {
-    title: "Combating Tuta Absoluta in Tomatoes: Fenari 120SC.",
-    date: "February 28, 2026",
-    author: "Kenagro Limited",
+    title: "Kanon Biostimulant: The 'Stress Coach' for Your Crops",
+    date: "April 30, 2026",
+    author: "Karanja",
     category: "Crop Health",
     image: "/products/WhatsApp Image 2026-04-30 at 5.46.54 AM.jpeg"
   },
   {
-    title: "Controlling Early and Late Blight in Tomatoes: TAJIRI 720WP",
-    date: "February 28, 2026",
-    author: "Agronomy Dept",
+    title: "Balanced Potato Nutrition: Essential Ratios for Maximum Yield Quality",
+    date: "April 30, 2026",
+    author: "Agronomy Department",
     category: "Pest Solution",
     image: "/products/WhatsApp Image 2026-04-30 at 5.46.56 AM3.jpeg"
+    // public\products\WhatsApp Image 2026-04-30 at 5.46.56 AM3.jpeg
   }
 ];
 

@@ -2,19 +2,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Kimani John",
+    name: "Douglas Koech",
     role: "Farmer",
-    quote: "Hi, The products are not only effective but also safe for the environment. My soil is healthier, my crops are thriving, and I’ve noticed a significant reduction in pests."
+    quote: "The products perform well, but the outcome is highly dependent on applying them at the correct growth stages. If application is delayed or done too early, the crop does not fully benefit, and the expected improvement in tuber formation and yield may not be achieved."
   },
   {
-    name: "Jecinta Achieng",
-    role: "Horticulture",
-    quote: "We had a serious pest infestation, and I was at my wit’s end trying to control it with traditional methods. After using ALIP’ fumigation service, I’m amazed at the results!"
+    name: "Teresia Musyoka",
+    role: "Farmer",
+    quote: "For best results, the products need to be integrated with good agronomic practices such as proper land preparation, timely irrigation, effective pest and disease management, and appropriate spacing. When used in isolation without these supporting practices, the performance is not as strong."
   },
   {
-    name: "Kipkorir James",
-    role: "Large Scale Farmer",
-    quote: "I Highly recommend EMMARON! It's made a huge difference on my farm. More efficient & reliable. The results speak for themselves."
+    name: "Cosmas Cheruiyot",
+    role: "Farmer",
+    quote: "Farmers who already understand crop nutrition and feeding programs tend to get better results because they can apply the products more accurately. The improvements in crop health and yield are noticeable, but they are not instant. Farmers need to be patient to fully realize the benefits at harvest."
   }
 ];
 
@@ -26,8 +26,8 @@ export default function Testimonials() {
           <span className="text-yellow-600 font-bold tracking-widest uppercase text-sm mb-4 block">
             Testimonials
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-green-950">
-            What Our <span className="text-green-700">Farmers Say</span>
+          <h2 className="text-4xl md:text-5xl font-black text-green-950 uppercase">
+            Our <span className="text-green-700">Testimonials</span>
           </h2>
           <div className="w-24 h-1.5 bg-yellow-500 mx-auto rounded-full mt-6" />
         </div>

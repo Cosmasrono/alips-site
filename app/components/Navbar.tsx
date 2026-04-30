@@ -5,9 +5,9 @@ import { navLinks, scrollToSection } from "./constants";
 import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen]       = useState(false);
-  const [scrolled, setScrolled]       = useState(false);
-  const [activeSection, setActive]    = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActive] = useState("home");
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
@@ -49,9 +49,8 @@ export default function Navbar() {
       </div>
 
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "top-0 bg-white shadow-xl py-3" : "top-0 lg:top-9 bg-white/95 backdrop-blur-md py-4"
-        }`}
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "top-0 bg-white shadow-xl py-3" : "top-0 lg:top-9 bg-white/95 backdrop-blur-md py-4"
+          }`}
       >
         <div className="max-w-[1400px] mx-auto px-8 flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => scrollToSection("home")}>
@@ -61,26 +60,24 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <div 
-                key={link.id} 
+              <div
+                key={link.id}
                 className="relative group"
                 onMouseEnter={() => setOpenDropdown(link.id)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <button
                   onClick={() => scrollToSection(link.id)}
-                  className={`flex items-center gap-1.5 py-2 text-sm font-bold tracking-wide transition-colors cursor-pointer ${
-                    activeSection === link.id ? "text-green-700" : "text-gray-700 hover:text-green-700"
-                  }`}
+                  className={`flex items-center gap-1.5 py-2 text-sm font-bold tracking-wide transition-colors cursor-pointer ${activeSection === link.id ? "text-green-700" : "text-gray-700 hover:text-green-700"
+                    }`}
                 >
                   {link.label}
                   {link.subLinks && <ChevronDown size={14} className={`transition-transform duration-300 ${openDropdown === link.id ? "rotate-180" : ""}`} />}
                 </button>
-                
+
                 {link.subLinks && (
-                  <div className={`absolute left-0 top-full pt-2 w-64 transition-all duration-300 origin-top-left ${
-                    openDropdown === link.id ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
-                  }`}>
+                  <div className={`absolute left-0 top-full pt-2 w-64 transition-all duration-300 origin-top-left ${openDropdown === link.id ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                    }`}>
                     <div className="bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden py-2">
                       {link.subLinks.map((sub) => (
                         <button
@@ -96,7 +93,7 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-       
+
           </nav>
 
           {/* Mobile Toggle */}
