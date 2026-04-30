@@ -52,6 +52,33 @@ const products = [
     badge: "Complete NPK",
     badgeBg: "bg-slate-700",
   },
+  {
+    name: "VODA NP",
+    type: "Fertilizer & Foliar",
+    desc: "A premium nutrient solution for vigorous growth in vegetables, specifically tomatoes and beans. Promotes healthy development and high yield.",
+    img: "/products/WhatsApp Image 2026-04-307 at 5.46.55 AM.jpeg",
+    alt: "Voda NP 5KG fertilizer bag",
+    badge: "New Arrival",
+    badgeBg: "bg-blue-600",
+  },
+  {
+    name: "Fenari 120SC",
+    type: "Insecticide",
+    desc: "A powerful solution for combating Tuta Absoluta in tomatoes and other pests. Ensures crop protection and health.",
+    img: "/products/placeholder-insecticide.jpg",
+    alt: "Fenari 120SC insecticide bottle",
+    badge: "Crop Protection",
+    badgeBg: "bg-orange-600",
+  },
+  {
+    name: "TAJIRI 720WP",
+    type: "Fungicide",
+    desc: "Effective control for early and late blight in tomatoes and other fungal diseases. Protects your harvest from disease.",
+    img: "/products/placeholder-fungicide.jpg",
+    alt: "Tajiri 720WP fungicide package",
+    badge: "Disease Control",
+    badgeBg: "bg-cyan-700",
+  },
 ];
 
 export default function Products() {

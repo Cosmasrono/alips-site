@@ -54,7 +54,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-xs text-white/40 uppercase font-black tracking-widest mb-1">Call Us</p>
-                  <p className="font-bold">+254 700 000 000</p>
+                  <p className="font-bold">+254 755 098 858</p>
                 </div>
               </li>
               <li className="flex gap-4">

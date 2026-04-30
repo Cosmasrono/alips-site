@@ -10,21 +10,21 @@ const news = [
     date: "March 2, 2026",
     author: "Mildred Kiura",
     category: "Recent News",
-    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80"
+    image: "/products/WhatsApp Image 2026-04-30 at 5.46.56 AM.jpeg"
   },
   {
     title: "Combating Tuta Absoluta in Tomatoes: Fenari 120SC.",
     date: "February 28, 2026",
     author: "Kenagro Limited",
     category: "Crop Health",
-    image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=800&q=80"
+    image: "/products/WhatsApp Image 2026-04-30 at 5.46.54 AM.jpeg"
   },
   {
     title: "Controlling Early and Late Blight in Tomatoes: TAJIRI 720WP",
     date: "February 28, 2026",
     author: "Agronomy Dept",
     category: "Pest Solution",
-    image: "https://images.unsplash.com/photo-1590682680393-272f779776bc?auto=format&fit=crop&w=800&q=80"
+    image: "/products/WhatsApp Image 2026-04-30 at 5.46.56 AM3.jpeg"
   }
 ];
 

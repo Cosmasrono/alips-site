@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-green-950 font-bold mb-1">Call Us</h4>
-                  <p className="text-gray-500 font-medium">+254 700 000 000</p>
+                  <p className="text-gray-500 font-medium">+254 755 098 858</p>
                 </div>
               </div>
               <div className="flex gap-4 group">
@@ -74,9 +74,9 @@ export default function Contact() {
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs font-black uppercase tracking-widest text-gray-400 ml-1">Phone Number</label>
-                    <input 
+                    <input  
                       type="tel" 
-                      placeholder="+254..." 
+                      placeholder="+254 755 098 858" 
                       className="w-full bg-gray-50 border-none rounded-2xl px-6 py-4 text-sm focus:ring-2 focus:ring-green-700 transition-all"
                     />
                   </div>

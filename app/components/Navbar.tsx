@@ -33,7 +33,7 @@ export default function Navbar() {
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <Phone size={14} className="text-yellow-400" />
-              <span>+254 700 000 000</span>
+              <span>+254 755 098 858</span>
             </div>
             <div className="flex items-center gap-2 border-l border-white/20 pl-8">
               <Mail size={14} className="text-yellow-400" />
@@ -96,13 +96,7 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            
-            {/* <button
-              onClick={() => scrollToSection("contact")}
-              className="ml-4 px-8 py-3 bg-green-700 hover:bg-green-800 text-white rounded-full text-sm font-bold shadow-lg shadow-green-700/20 transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
-            >
-              Get a Quote
-            </button> */}
+       
           </nav>
 
           {/* Mobile Toggle */}

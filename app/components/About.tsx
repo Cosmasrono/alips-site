@@ -18,7 +18,7 @@ export default function About() {
           <div className="relative">
             <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?auto=format&fit=crop&w=1200&q=90"
+                src="/products/WhatsApp Image 2026-04-30 at 5.46.56 AM6.jpeg"
                 alt="Expert agronomist in the field"
                 fill
                 className="object-cover"
