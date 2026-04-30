@@ -16,7 +16,7 @@ const news = [
   {
     title: "Kanon Biostimulant: The 'Stress Coach' for Your Crops",
     date: "April 30, 2026",
-    author: "Karanja",
+    author: "Karanja Irungu-Njoro",
     category: "Crop Health",
     image: "/products/WhatsApp Image 2026-04-30 at 5.46.54 AM.jpeg"
   },
