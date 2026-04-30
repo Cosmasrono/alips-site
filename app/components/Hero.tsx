@@ -14,7 +14,7 @@ const slides = [
   },
   {
     image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1800&q=90",
-    title: "Agripack Seeds",
+    title: "Alip Seeds",
     subtitle: "We provide farmers with the right seeds for maximum yield.",
     badge: "Premium Seed Varieties"
   },

@@ -46,7 +46,7 @@ const products = [
   {
     name: "Kanon N.P.K 24:24:18+TE",
     type: "Foliar Fertilizer",
-    desc: "Complete balanced NPK with trace elements — suitable for all crops at every growth stage.",
+    desc: "A well-balanced formulation enriched with trace elements to support healthy growth, proper tuber development, and improved yield quality — ideal for heavy feeders like potatoes.",
     img: "/products/kanon-npk-b.jpg",
     alt: "Kanon NPK 24:24:18+TE 1L foliar fertilizer bottle alternate view",
     badge: "Complete NPK",

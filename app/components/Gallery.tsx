@@ -6,6 +6,13 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 
 const news = [
   {
+    title: "Balanced Potato Nutrition: Essential Ratios for Maximum Yield Quality",
+    date: "April 30, 2026",
+    author: "Karanja Irungu-Molo",
+    category: "Crop Nutrition",
+    image: "/products/WhatsApp Image 2026-04-30 at 5.46.56 AM6.jpeg"
+  },
+  {
     title: "Effective Weed Control In Maize: The Best Selective Herbicide",
     date: "March 2, 2026",
     author: "Mildred Kiura",
