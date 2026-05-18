@@ -100,7 +100,7 @@ export default function Footer() {
 
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-white/40 text-sm font-bold tracking-wide">
-            Copyright © 2026 ALIP Suppliers Limited. All Rights Reserved.
+            Copyright © 2026 ALIP Suppliers Limited. All Rights Reserved. | Designed by @cossi
           </p>
           <div className="flex gap-8 text-white/40 text-sm font-bold tracking-wide">
             <button className="hover:text-white transition-colors">Privacy Policy</button>
